@@ -1,0 +1,33 @@
+{
+  "name": "messenger",
+  "version": "1.0.0",
+  "description": "Messenger clone using react-redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.9.8",
+    "@material-ui/icons": "^4.9.1",
+    "axios": "^0.19.2",
+    "cross-env": "^7.0.2",
+    "emoji-mart": "^3.0.0",
+    "js-cookie": "^2.2.1",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "pusher-js": "^5.1.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hot-loader": "^4.12.20",
+    "react-moment": "^0.9.7",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scroll": "^1.7.16",
+    "react-spinners": "^0.8.1",
+    "react-textarea-autosize": "^7.1.2",
+    "redux": "^4.0.5",
+    "typeface-roboto": "0.0.75"
+  }
+}

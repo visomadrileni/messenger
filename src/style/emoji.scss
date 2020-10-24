@@ -1,0 +1,30 @@
+@import "../../../node_modules/emoji-mart/css/emoji-mart.css";
+
+#emojis {
+  position: absolute;
+  top: -365px;
+  right: 0;
+  box-shadow: none;
+
+    .emoji-mart-bar:last-child {
+      display: none;
+    }
+    .emoji-mart {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+
+      .emoji-mart-search {
+        .emoji-mart-search-icon {
+          position: absolute;
+          top: 8px;
+          left: 16px;
+        }
+        input {
+          padding: 6px 5px 6px 30px;
+          border: 1px solid #eee;
+          background: #f1f1f4;
+          font-size: 14px;
+          color: #666;
+        }
+      }
+    }
+}

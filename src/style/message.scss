@@ -1,0 +1,132 @@
+.message{
+    display: flex;
+    margin: 1px 20px;
+    color: black;
+
+    .details{
+        display: flex;
+        float: left;
+        margin-left: 10px;
+
+        .status{
+            display: flex;
+            padding: 5px;
+            margin-left: 5px;
+            font-size: 11px;
+            color: #8a8d91;
+
+            .checkMark{
+                margin-left: 5px;
+            }
+        }
+
+        .text{
+            max-width: 450px;
+            padding: 12px 15px;
+            border-radius: 15px;
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+            font-size: 14px;
+            color: #fff;
+            background: #2d7cc1;
+        }
+    }
+
+    &.__first__last{
+        .details{
+            .text{
+                border-top-left-radius: 2px;
+                border-bottom-left-radius: 15px;
+            }
+        }
+    }
+
+    &.__first{
+        .details{
+            .text{
+                border-top-left-radius: 2px;
+                border-bottom-left-radius: 2px;
+            }
+        }
+    }
+
+    &.__last{
+        .details{
+            .text{
+                border-top-left-radius: 2px;
+                border-bottom-left-radius: 15px;
+            }
+        }
+    }
+
+    &.__noAvatar{
+        .details{
+             margin-left: 45px;
+        }
+    }   
+}
+
+.messageMy{
+    display: flex;
+    flex-direction: row-reverse; 
+    margin: 1px 25px;
+    font-size: 14px;
+    color: black;
+
+    .details{
+        display: flex;
+        float: right;
+
+        .text{
+            max-width: 450px;
+            padding: 12px 15px;
+            border-radius: 15px;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+            font-size: 14px;
+            color: #2b2c33;
+            background: #f1f1f4;
+        }
+
+        .status{
+            display: flex;
+            padding: 5px;
+            margin-right: 5px;
+            font-size: 11px;
+            color: #8a8d91;
+
+            .checkMark{
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &.__first__last {
+        margin-top: 10px;
+        .details {
+          .text {
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 15px;
+          }
+        }
+      }
+
+      &.__first {
+        margin-top: 10px;
+        .details {
+          .text {
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+          }
+        }
+      }
+      
+      &.__last {
+        .details {
+          .text {
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 15px;
+          }
+        }
+      }
+}

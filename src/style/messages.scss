@@ -1,0 +1,86 @@
+#talk{
+    position: relative;
+    width: calc(100vw - 350px);
+    background: #fff;
+
+    .heading{
+        display: flex;
+        position: fixed;
+        height: 50px;
+        width: calc(100% - 351px);
+        top:0;
+        z-index: 1;
+        cursor: default;
+        padding: 7px 10px 7px 20px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+
+        .user{ cursor: pointer; }
+        .name{
+            flex: 2;
+            margin-top: 3px;
+            margin-left: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #43444f;
+
+            .activeAt{
+                margin-top: 1px;
+                font-size: 12px;
+                font-weight: 600;
+                color: #8a8d91;
+            }
+        }
+
+        #phone { margin-right: 10px;}
+        #textSearch { margin-right: 0; }
+        #profileInfo { margin-left: 10px;}
+    }
+
+    #messages{
+        position: relative;
+        height: calc(100vh - 110px);
+        padding-top: 65px;
+        overflow: scroll;
+        background: #fff;
+
+        .messageContainer{
+            position: relative;
+            margin: 0 10px 10px 49px;
+
+            textarea{
+                height: auto;
+                width: 100%;
+                padding: 20px;
+                resize: none;
+                line-height: 24px;
+                font-size: 16px;
+                overflow: auto;
+                border: none;
+                border-radius: 3px;
+                box-sizing: border-box;
+                background: #f1f1f4; 
+            }
+
+            #buttonEmoji{
+                position: absolute;
+                top: 1px;
+                right: 105px;
+                z-index: 1;
+            }
+
+            #buttonUpload{
+                position: absolute;
+                top: 1px;
+                right: 55px;
+                z-index: 1; 
+            }
+
+            #buttonSend{
+                position: absolute;
+                top: 1px;
+                right: 0;
+                z-index: 1;
+            }
+        }
+    }
+}

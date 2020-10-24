@@ -1,0 +1,64 @@
+#rooms{
+    height: calc(100% - 49px);
+
+    .items{
+        height: calc(100%);
+        overflow: scroll;
+
+        .userItem{
+            border-right: 3px solid transparent;
+            &:hover{
+                border-right: 3px solid #ccc;
+                background: rgba(0,0,0,0.08);
+            }
+            &.__active{
+                border-right: 3px solid #ccc;
+                background: rgba(0,0,0,0.08);
+            }
+        
+            .user{
+                padding: 10px;
+                .status{
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    font-size: 11px;
+                    color: #8a8d91;
+
+                    .checkMark{
+                        float: left;
+                        margin-top: -1px;
+                        margin-right: 5px;
+                    }
+                }
+
+                .details{
+                    padding-left: 10px;
+                    margin-top: 5px;
+                    overflow: hidden;
+
+                    .name{
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #43444f;
+                    }
+
+                    .lastMessage{
+                        width: 1000px;
+                        font-size: 14px;
+                        color: #8a8d91;
+                    }
+                }
+            }
+        }
+    }
+
+    .noResults{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -45px;
+        font-size: 90px;
+        color: #8a8d91;
+    }
+}
